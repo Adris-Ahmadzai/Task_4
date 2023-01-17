@@ -1,0 +1,27 @@
+<script>
+
+    // make a function to get three argument
+    let greatestof = function(a, b, c){
+        if (a >= b && a >= c ) {
+            return a;
+        }
+
+        else if (b >= a && b >= c) {
+            return b;
+        }
+
+        else{
+            return c;
+        }
+    }
+
+    // ask user for input
+    let x = Number(prompt("What is x"));
+    let y = Number(prompt("What is y"));
+    let z = Number(prompt("What is z"));
+
+    // show the result
+    alert(`The greatest of ${x}, ${y} and ${z} is: ${greatestof(x , y, z)}`)
+
+
+</script>
